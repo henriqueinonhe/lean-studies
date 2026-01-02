@@ -92,4 +92,5 @@ instance : ToString Natural where
 def Natural.remainder (n : Natural) (m : Natural) : Maybe Natural :=
   ((Natural.div n m).andThen (Natural.mult m)).andThen (Natural.sub n)
 
+#check ToString (Maybe Natural)
 #eval Natural.remainder Natural.Two Natural.Zero

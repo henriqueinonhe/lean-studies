@@ -74,4 +74,4 @@ def MyList.last? {α : Type} (self : MyList α) : Option α :=
 
 def list := MyList.Cons 1 (MyList.Cons 2 (MyList.Cons 3 MyList.Nil))
 
-#eval list.last?
+#eval (MyList.Nil : MyList Int).first?
